@@ -43,7 +43,6 @@ public class FlightAvailabilityMultipleCallsAUHtoHYD {
 	
 
 	// Amadeus authorization creds to generate access token
-	//Amadeus amadeus = Amadeus.builder("emcOTJUDtdaLuXc5euAHaLNAKHDNFknX", "2aEMOAogWDuGj55C").build();
 	Amadeus amadeus=Amadeus.builder(AllAPICalls.getApiKey(), AllAPICalls.getApiSecret()).build(); 
 	static String body;
 

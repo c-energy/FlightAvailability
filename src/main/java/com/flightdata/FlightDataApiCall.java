@@ -21,8 +21,8 @@ import com.amadeustest.AllAPICalls;
 public class FlightDataApiCall {
 	private static Logger logger = Logger.getLogger(FlightDataApiCall.class);
 
-	private static String apiKey = "7IKQgKIa5Sbp5zMiYnsGZA90oGH5AdRF";
-	private static String apiSecret = "LN7GEurYvpNyYfEy";
+	private static String apiKey = "<<apikey>>";
+	private static String apiSecret = "<<apisecret>>";
 	static List datesArray = new ArrayList();
 
 	public static String getApiKey() {
@@ -63,10 +63,10 @@ public class FlightDataApiCall {
 
 	public static void mainTask() throws ResponseException, IOException, EncryptedDocumentException, InvalidFormatException {
 		setDatesList();
+		//For logging purpose
 		BasicConfigurator.configure();
 		FlightDataBAAirlines f=new FlightDataBAAirlines();
 		f.allAPICalls();
-
 	}
 	
 	public static void main(String[] args) throws EncryptedDocumentException, InvalidFormatException, ResponseException, IOException {
